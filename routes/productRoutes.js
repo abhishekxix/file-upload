@@ -5,7 +5,6 @@ const {
   getAllProducts,
 } = require('../controllers/productController')
 const { uploadProductImage } = require('../controllers/uploadsController')
-const { mapReduce } = require('../models/Product')
 
 router.route('/').post(createProduct).get(getAllProducts)
 router.route('/uploads').post(uploadProductImage)
